@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get('/healthcheck', async (_req: Request, res: Response) => {
-  res.status(200).json()
+  res.status(200).json({ status: "OK" })
 })
 
 export default app
