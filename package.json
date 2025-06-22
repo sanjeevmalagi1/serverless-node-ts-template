@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon --watch src --exec ts-node -r tsconfig-paths/register src/server.ts",
     "build": "tsc",
-    "start": "node dist/server.js",
+    "start": "node -r tsconfig-paths/register dist/server.js",
     "offline": "npx serverless offline",
     "test": "jest -i --colors --verbose --forceExit --detectOpenHandles",
     "coverage": "jest -i --coverage",
